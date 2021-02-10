@@ -614,28 +614,8 @@ async def about_me(message):
         rclone_m = "N/A"
 
     msg = (
-        "<b>Name</b>: <code>TorToolkit</code>\n"
-        f"<b>Version</b>: <code>{__version__}</code>\n"
-        f"<b>Telethon Version</b>: {telever}\n"
-        "<b>Created By</b>: @yaknight\n\n"
-        "<u>Currents Configs:-</u>\n"
-        "<b>Torrent Download Engine:-</b> <code>qBittorrent [4.3.0 fix active]</code> \n"
-        "<b>Direct Link Download Engine:-</b> <code>aria2</code> \n"
-        "<b>Upload Engine:-</b> <code>RCLONE</code> \n"
-        "<b>Youtube Download Engine:-</b> <code>youtube-dl</code>\n"
-        f"<b>Rclone config:- </b> <code>{rclone_cfg}</code>\n"
-        f"<b>Leech:- </b> <code>{leen}</code>\n"
-        f"<b>Rclone:- </b> <code>{rclone}</code>\n"
-        f"<b>Rclone Mod :- </b> <code>{rclone_m}</code> \n"
-        f"<b>User Caps(Limits) :- </b> <code>In-progress</code> \n"
-        "\n"
-        f"<b>Latest {__version__} Changelog :- </b> Improved the YTDL error reporting.\n"
-        "Fixed a size bug in YTDL.\n"
-        "New /usettings menu for user settings.\n"
-        "Custom thumbnail Support.\n"
-        "User choice force documents.\n"
-        "Disable thumbnail also added.\n"
-        "You can now load custom rclone drives but its not yet implement to transfer to your drive. WIP \n"
+        "<b>Name</b>: <code>Originally by YashDK</code>\n"
+        "Remodded by @troy007\n"
     )
 
     await message.reply(msg,parse_mode="html")

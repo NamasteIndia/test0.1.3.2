@@ -27,7 +27,7 @@ async def upload_handel(path,message,from_uid,files_dict,job_id=0,force_edit=Fal
     #logging.info("Uploading Now:- {}".format(path))
 
     if os.path.isdir(path):
-        logging.info("Uplaoding the directory:- {}".format(path))
+        logging.info("Uploading the directory:- {}".format(path))
 
         directory_contents = os.listdir(path)
         directory_contents.sort()
@@ -76,7 +76,7 @@ async def upload_handel(path,message,from_uid,files_dict,job_id=0,force_edit=Fal
             updb.deregister_upload(message.chat_id,message.id)
 
     else:
-        logging.info("Uplaoding the file:- {}".format(path))
+        logging.info("Uploading the file:- {}".format(path))
         if os.path.getsize(path) > get_val("TG_UP_LIMIT"):
             # the splitted file will be considered as a single upload ;)
             
@@ -97,10 +97,10 @@ async def upload_handel(path,message,from_uid,files_dict,job_id=0,force_edit=Fal
                 ftype = "unknown"
             
             if ftype == "video":    
-                todel = await message.reply("FILE LAGRE THEN THRESHOLD SPLITTING NOW.Processing.....\n```Using Algo FFMPEG SPLIT```") 
+                todel = await message.reply("FILE LARGE THEN THRESHOLD SPLITTING NOW.Processing.....\n```Using Algo FFMPEG SPLIT```") 
                 split_dir = await vids_helpers.split_file(path,get_val("TG_UP_LIMIT"))
             else:
-                todel = await message.reply("FILE LAGRE THEN THRESHOLD SPLITTING NOW.Processing.....\n```Using Algo PARTED ZIP SPLIT```") 
+                todel = await message.reply("FILE LARGE THEN THRESHOLD SPLITTING NOW.Processing.....\n```Using Algo PARTED ZIP SPLIT```") 
                 split_dir = await zip7_utils.split_in_zip(path,get_val("TG_UP_LIMIT"))
             
             dircon = os.listdir(split_dir)

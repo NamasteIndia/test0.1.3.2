@@ -33,7 +33,7 @@ p { font-size: 12px; margin: 24px;}
 </style>
 </head>
 <body>
-<h1>TorToolKit : <a href="#">Github</a></h1>
+<h1>troymods : <a href="#">Github</a></h1>
 <form action="{form_url}" method="POST">
 
 {My_content}

@@ -315,7 +315,7 @@ async def get_status(message,all=False):
                 continue
             else:
                 olen += 1
-                msg += "📥 <b>{} | {}% | {}/{}({}) | {} | {} | S:{} | L:{} | {}</b>\n\n".format(
+                msg += "Downloading <b>{} | {}% | {}/{}({}) | {} | {} | S:{} | L:{} | {}</b>\n\n".format(
                     i.name,
                     round(i.progress*100,2),
                     human_readable_bytes(i.completed),
@@ -344,8 +344,8 @@ def progress_bar(percentage):
     """Returns a progress bar for download
     """
     #percentage is on the scale of 0-1
-    comp = "▰"
-    ncomp = "▱"
+    comp = "▓"
+    ncomp = ""
     pr = ""
 
     for i in range(1,11):
