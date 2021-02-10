@@ -1,4 +1,6 @@
-## Deploy
+## Deploy (WORKING)
+
+Working in Public Telegram Group [public group](https://t.me/troymods)
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
@@ -114,4 +116,4 @@ Rest Variables are not to changes
     purge - Delete all torrents ⚠️ Admin Only
     getlogs - Get the robot logs ⚠️ Admin Only
 
-
+Credit Goes to The pro https://github.com/yash-dk/TorToolkit-Telegram
